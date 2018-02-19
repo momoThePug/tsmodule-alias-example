@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./",
+    "strict": false,
+    "rootDir": "./",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "paths": {
+    "@mod": ["foo/bar/barz/barbar"],
+    "@pugpath": ["momo/pug"],
+    "@bar": ["bar/bar"], 
+    "@more/*": ["more/*"],
+    "@leon/*": ["more/leon/*"]
+  },
+  "include": ["./", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tsmodule-alias-examplemod",
+  "version": "1.0.0",
+  "description": "Example to showcase tsmodule-alias module",
+  "main": "index.js",
+  "scripts": {
+    "run": "node ./index.js",
+    "build": "tsc -p \"./\"",
+    "start": " npm run build && node index.js "
+  },
+  "dependencies": {
+    "@types/node": "^9.4.5",
+    "typescript": "^2.7.1"
+  },
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "tspath": "^1.2.10",
+    "typescript": "2.4.2",
+    "tsconfig-paths": "^3.1.1"
+  },
+  "author": "Daniel Vera Morales",
+  "license": "MIT"
+}
