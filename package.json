@@ -1,5 +1,5 @@
 {
-  "name": "tsmodule-alias-examplemod",
+  "name": "momoThePug/tsmodule-alias-examplemod",
   "version": "1.0.0",
   "description": "Example to showcase tsmodule-alias module",
   "main": "index.js",
@@ -8,6 +8,16 @@
     "build": "tsc -p \"./\"",
     "start": " npm run build && node index.js "
   },
+ "homepage": "https://github.com/momoThePug/tsmodule-alias-example",
+  "keywords": [
+    "extend",
+    "modules",
+    "node",
+    "path",
+    "typescript",
+    "alias",
+    "resolve"
+],
   "dependencies": {
     "@types/node": "^9.4.5",
     "typescript": "^2.7.1"
@@ -18,6 +28,10 @@
     "typescript": "2.4.2",
     "tsconfig-paths": "^3.1.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momoThePug/tsmodule-alias-example.git"
+},
   "author": "Daniel Vera Morales",
   "license": "MIT"
 }
