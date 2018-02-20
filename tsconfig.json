@@ -4,17 +4,17 @@
     "module": "commonjs",
     "outDir": "./",
     "strict": false,
-    "rootDir": "./",
+    "baseUrl": "./",
     "declaration": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
-  },
+    "emitDecoratorMetadata": true,
   "paths": {
     "@mod": ["foo/bar/barz/barbar"],
     "@pugpath": ["momo/pug"],
     "@bar": ["bar/bar"], 
     "@more/*": ["more/*"],
     "@leon/*": ["more/leon/*"]
+  }
   },
   "include": ["./", "src/**/*"],
   "exclude": ["node_modules", "dist"]
