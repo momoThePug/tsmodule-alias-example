@@ -1,7 +1,7 @@
 /**
  * 
  */
-const TSModuleAlias = require("tsmodule-alias");
+const TSModuleAlias = require("@momothepug/tsmodule-alias");
 const tsconfigToReadFromRoot = "./";
 TSModuleAlias.play(tsconfigToReadFromRoot)
 console.log(require("@mod"));
