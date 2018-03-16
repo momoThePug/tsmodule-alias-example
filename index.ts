@@ -1,9 +1,13 @@
 /**
- *
+ * @author Daniel Vera Morales
  */
 const TSModuleAlias = require("@momothepug/tsmodule-alias");
 const tsconfigToReadFromRoot = "./";
-const aliasRegister = TSModuleAlias.play(tsconfigToReadFromRoot);
+
+// With no custom aliases: TSModuleAlias.play(tsconfigToReadFromRoot);
+const aliasRegister = TSModuleAlias.play(tsconfigToReadFromRoot, {
+  "@canela": __dirname + "/leo/orange/canela/canela"
+});
 
 /**
  *  Alias override and dynamic definitions
@@ -20,6 +24,7 @@ if (process.env.isDevelop) {
   // overriding @mod alias defined in tsconfig
   aliasRegister.addPathAlias("@mod", __dirname + "/leo/orange/dog/orange");
 }
+console.log(require("@canela"));
 console.log(require("@mod"));
 console.log(require("@pugpath/pug"));
 console.log(require("@bar"));

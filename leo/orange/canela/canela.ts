@@ -1,0 +1,3 @@
+export = {
+  Canela: "Dog"
+};
